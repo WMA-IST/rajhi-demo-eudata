@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+html,
+body {
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #F6F6F6;
+    color: var(--dark);
+    font-size: 16px;
+    margin: 0;
+}
+
+
+:root {
+    --blue: #221AFB;
+    --gray: #EEEEEE;
+    --dark: #172328;
+    --dark-gray: #9099A0;
+    --hover: #1e17eb;
+}
+
+h3 {
+    color: var(--dark);
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    font-size: 1.3rem;
+}
+
+p {
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+h5 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--blue);
+    margin-bottom: 0.4em;
+    letter-spacing: -1px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-size: 0.85rem;
+    margin-top: 1em;
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+
+
+
+header {
+    background: var(--blue);
+    margin: 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gray);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    cursor: pointer;
+    padding: 0.5em 1.3em;
+
+}
+
+ul li:hover {
+    background-color: var(--hover);
+
+}
+
+
+
+ul:last-child {
+    margin-right: 0;
+}
+
+section {
+    margin: 0;
+    background-color: #fff;
+    padding: 6em 0;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2em;
+    padding: 4em 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 1px solid #e6e6e6;
+}
+
+button {
+    display: block;
+    background-color: var(--blue);
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 1.3em 2em;
+    margin-top: 1.6128em;
+}
+
+button:hover {
+    background-color: var(--hover);
+}
+
+@media (max-width:650px) {
+    ul li {
+        font-size: 0.8rem;
+    }
+
+}
