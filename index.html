@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://printjs-4de6.kxcdn.com/print.min.css"
+    />
+
     <link rel="stylesheet" href="styles.css" />
 
     <title>Rajhi Demo</title>
@@ -28,7 +33,9 @@
           To be a trusted leader delivering innovative financial solutions to
           enhance quality of life everywhere.
         </p>
-        <button>Learn More</button>
+        <button onClick="document.getElementById('form').scrollIntoView();">
+          Get a Loan
+        </button>
       </div>
     </section>
 
@@ -47,6 +54,37 @@
         <a href="">Find the nearest branch</a>
       </div>
     </main>
+
+    <section id="form">
+      <div class="container">
+        <form method="post" action="#" id="printJS-form">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" />
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" />
+
+          <label for="email">Email Address</label>
+          <input type="text" id="email" name="email" />
+        </form>
+        <button
+          type="button"
+          onclick="printJS({
+          printable: 'printJS-form',
+          type: 'html',
+          style:'label {display: block;font-weight: bold;margin-top: 1.5em;margin-bottom: .5em;font-family: sans-serif;}input[type=text], select, textarea {width: 100%;padding: 1em;border-radius: .2em;border: 1px solid #9099A0;color: #1B1820;}input[type=text]:focus, textarea:focus {outline: 1px solid #221AFB;}',
+      })"
+        >
+          Print Form
+        </button>
+      </div>
+    </section>
+
+    <!-- Print js CDN -->
+    <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+    <script src="./app.js"></script>
+
+    <!-- ARB Script -->
 
     <div id="unyco_containerhlhk0hun75">
       <script

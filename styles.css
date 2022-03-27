@@ -146,3 +146,25 @@ button:hover {
     }
 
 }
+
+
+/* forms */
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 1em;
+    border-radius: .2em;
+    border: 1px solid var(--dark-gray);
+    color: #1B1820;
+}
+
+input[type=text]:focus, textarea:focus {
+    outline: 1px solid var(--blue);
+}
