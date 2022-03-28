@@ -172,19 +172,24 @@
             value="0"
           />
           <label for="expatsFees">Fees on Expats</label>
-          <input
-            type="number"
-            id="expatsFees"
-            name="expatsFees"
-            value="0"
-          />
+          <input type="number" id="expatsFees" name="expatsFees" value="0" />
           <label for="futureFees">Other Future Expenses</label>
-          <input
-            type="number"
-            id="futureFees"
-            name="futureFees"
-            value="0"
-          />
+          <input type="number" id="futureFees" name="futureFees" value="0" />
+
+          <br />
+          <br />
+          <label for="signature">Signature</label>
+          <!-- <input
+            class="signature"
+            type="text"
+            id="signature"
+            name="signature"
+          /> -->
+
+          <div style="width: 100%; border-bottom: 1px dashed gray;margin-top: 1em;"></div>
+
+          <br />
+          <br />
         </form>
         <button
           type="button"
@@ -193,7 +198,7 @@
           header: '',
           documentTitle:'Rajhi Bank',
           type: 'html',
-          style:'label {display: block;font-weight: bold;margin-top: 1.5em;margin-bottom: .5em;font-family: sans-serif;}input[type=text],input[type=date],input[type=number], select, textarea {width: 100%;padding: 1em;border-radius: .2em;border: 1px solid #9099A0;color: #1B1820;}input[type=text]:focus, textarea:focus {outline: 1px solid #221AFB;}',
+          style:'label {display: block;font-weight: bold;margin-top: 1.5em;margin-bottom: .5em;font-family: sans-serif;}input[type=text],input[type=date],input[type=number], select, textarea {width: 100%;padding: 1em;border-radius: .2em;border: 1px solid #9099A0;color: #1B1820;}input[type=text]:focus, textarea:focus {outline: 1px solid #221AFB;}input[type=text].signature{border: none;border-bottom:2px solid var(--dark-gray);}input[type=text].signature:focus {border-bottom:1px solid var(--blue);}',
       })"
         >
           Submit Form

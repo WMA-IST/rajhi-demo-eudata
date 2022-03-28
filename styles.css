@@ -168,3 +168,14 @@ input[type=text],input[type=date],input[type=number], select, textarea {
 input[type=text]:focus, textarea:focus {
     outline: 1px solid var(--blue);
 }
+
+input[type=text].signature{
+    border: none;
+    border-bottom:1px solid var(--dark-gray);
+
+}
+
+input[type=text].signature:focus {
+    border-bottom:1px solid var(--blue);
+    outline: none;
+}
