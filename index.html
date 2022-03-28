@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://printjs-4de6.kxcdn.com/print.min.css"
+    />
+
     <link rel="stylesheet" href="styles.css" />
 
     <title>Rajhi Demo</title>
@@ -28,7 +33,9 @@
           To be a trusted leader delivering innovative financial solutions to
           enhance quality of life everywhere.
         </p>
-        <button>Learn More</button>
+        <button onClick="document.getElementById('form').scrollIntoView();">
+          Get a Loan
+        </button>
       </div>
     </section>
 
@@ -47,6 +54,158 @@
         <a href="">Find the nearest branch</a>
       </div>
     </main>
+
+    <section id="form">
+      <div class="container">
+        <form method="post" action="#" id="printJS-form">
+          <label for="employerCategory">Employer category</label>
+          <select id="employerCategory">
+            <option value="private">Private Sector</option>
+          </select>
+
+          <label for="employerName">Employer name</label>
+          <select id="employerName">
+            <option value="ist">IST</option>
+          </select>
+
+          <label for="department">Department</label>
+          <select id="department">
+            <option
+              value="solution consultant
+            "
+            >
+              Solution Consultant
+            </option>
+          </select>
+
+          <label for="date">Join date</label>
+          <input type="date" id="date" name="date" value="2022-03-28" />
+
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" value="Muhammad " />
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" value="Faisal" />
+
+          <label for="email">Email Address</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            value="faisal@istnetworks.com"
+          />
+
+          <label for="maritalStatus">Marital Status</label>
+          <select id="maritalStatus">
+            <option
+              value="Married
+            "
+            >
+              Married
+            </option>
+          </select>
+
+          <label for="familyMembers">Family Members</label>
+          <input
+            type="number"
+            id="familyMembers"
+            name="familyMembers"
+            value="4"
+          />
+
+          <label for="houseOwnership">House Ownership</label>
+          <input
+            type="text"
+            id="houseOwnership"
+            name="houseOwnership"
+            value="Tenant"
+          />
+
+          <label for="insuranceFees">Did you pay insurance fees?</label>
+          <select id="insuranceFees">
+            <option
+              value="no
+            "
+            >
+              No
+            </option>
+          </select>
+
+          <label for="netSalary">Net Salary</label>
+          <input type="number" id="netSalary" name="netSalary" value="5000" />
+
+          <label for="foodAndBeverages">Food and Beverages</label>
+          <input
+            type="number"
+            id="foodAndBeverages"
+            name="foodAndBeverages"
+            value="920"
+          />
+          <label for="Housing">Housing</label>
+          <input type="number" id="Housing" name="Housing" value="2875" />
+          <label for="utilities">Utilities</label>
+          <input type="number" id="utilities" name="utilities" value="345" />
+          <label for="healthCare">Health Care Services & Insurance</label>
+          <input type="number" id="utilities" name="utilities" value="0" />
+          <label for="transport"> Transport</label>
+          <input type="number" id="transport" name="transport" value="575" />
+
+          <label for="communications">Communications</label>
+          <input
+            type="number"
+            id="communications"
+            name="communications"
+            value="230"
+          />
+          <label for="educationFees">Education Fees</label>
+          <input
+            type="number"
+            id="educationFees"
+            name="educationFees"
+            value="500"
+          />
+          <label for="homeServants">Home Servants</label>
+          <input
+            type="number"
+            id="homeServants"
+            name="homeServants"
+            value="0"
+          />
+          <label for="expatsFees">Fees on Expats</label>
+          <input
+            type="number"
+            id="expatsFees"
+            name="expatsFees"
+            value="0"
+          />
+          <label for="futureFees">Other Future Expenses</label>
+          <input
+            type="number"
+            id="futureFees"
+            name="futureFees"
+            value="0"
+          />
+        </form>
+        <button
+          type="button"
+          onclick="printJS({
+          printable: 'printJS-form',
+          header: '',
+          documentTitle:'Rajhi Bank',
+          type: 'html',
+          style:'label {display: block;font-weight: bold;margin-top: 1.5em;margin-bottom: .5em;font-family: sans-serif;}input[type=text],input[type=date],input[type=number], select, textarea {width: 100%;padding: 1em;border-radius: .2em;border: 1px solid #9099A0;color: #1B1820;}input[type=text]:focus, textarea:focus {outline: 1px solid #221AFB;}',
+      })"
+        >
+          Submit Form
+        </button>
+      </div>
+    </section>
+
+    <!-- Print js CDN -->
+    <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+    <script src="./app.js"></script>
+
+    <!-- ARB Script -->
 
     <div id="unyco_containerhlhk0hun75">
       <script
